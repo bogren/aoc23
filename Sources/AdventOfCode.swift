@@ -4,9 +4,15 @@ import ArgumentParser
 @main
 struct AdventOfCode: ParsableCommand {
 
+  private static let days: [ParsableCommand.Type] = [
+    Day1.self,
+    Day2.self,
+    Day3.self
+  ]
+
   static let configuration = CommandConfiguration(
     abstract: "Solutions to Advent of Code 2023 🎄",
-    subcommands: [Day1.self, Day2.self],
+    subcommands: days,
     helpNames: .shortAndLong
   )
 }
