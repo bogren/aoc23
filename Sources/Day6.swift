@@ -39,4 +39,3 @@ struct Day6: ParsableCommand {
     print(part2)
   }
 }
-

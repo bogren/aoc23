@@ -75,11 +75,6 @@ struct Day3: ParsableCommand {
   }
 }
 
-struct Coordinate: Hashable {
-  let x: Int
-  let y: Int
-}
-
 extension Substring.SubSequence {
   var isNumber: Bool {
     Character(String(self)).isNumber
